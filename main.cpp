@@ -73,14 +73,6 @@ void insert(string toInsert) {
 	}
 }
 
-void print() {
-	for (int i = 0; i < wordsIndex; i++) {
-		cout << words[i].contents 
-			 << setw(20 - words[i].contents.length()) 
-			 << words[i].count << endl;
-	}
-}
-
 void printFirst(int toPrint) {
 	for (int i = 0; i < toPrint && i < wordsIndex; i++) {
 		cout << words[i].contents 
